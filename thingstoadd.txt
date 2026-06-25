@@ -1,0 +1,26 @@
+Things to add: 
+- Mathematics 
+    -Precalc
+    - Calc 1
+    - Calc 2 (as learned)
+    -Multivariable calc 
+    - more to come 
+Computer Science:
+    -Python Programming language 
+    - C language 
+    -Php
+    -Html(basics)
+    -verilog(VHDL)
+    - Digital Logic and applications 
+    - Operating Systems 
+Eletrical engineering 
+    -Voltage Measurements 
+    - Computer architecture 
+        -Different Systems
+    - Microcontroller Systems 
+        breadboards 
+        different controllers 
+    - Embeded Systems 
+    -Material Science 
+    -Signals Systems 
+    - Schematic Fundamentals 
