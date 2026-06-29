@@ -154,6 +154,15 @@ section a:hover {
     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
+.topic-card summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.topic-card summary::-webkit-details-marker {
+    display: none;
+}
+
 .topic-card h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -165,6 +174,16 @@ section a:hover {
     font-size: 0.85rem;
     color: #777;
     margin: 0;
+}
+
+.topic-details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.topic-details p {
+    color: #555;
 }
 
 /* FOOTER */
