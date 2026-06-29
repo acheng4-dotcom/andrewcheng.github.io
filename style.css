@@ -95,6 +95,78 @@ section a:hover {
     background-color: #2e2e5e;
 }
 
+/* NAV */
+.nav {
+    background-color: #1a1a2e;
+    padding: 14px 40px;
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+/* PAGE HERO */
+.page-hero {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 48px 40px 36px;
+}
+
+.page-hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.page-hero p {
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+/* TOPIC GRID */
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.topic-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.topic-card:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.topic-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.topic-card p {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
