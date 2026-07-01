@@ -24,3 +24,7 @@ Eletrical engineering
     -Material Science 
     -Signals Systems 
     - Schematic Fundamentals 
+
+Update: 
+Working on site functionality 
+    Update functonality to math features and buttons.(7/1/26)
