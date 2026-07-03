@@ -53,4 +53,10 @@ Adding content:
     -Reference 
       -Psuedo Algorithm 
       - Karungh Maps (K-MAPS pinout)
-    
+Introduction: 
+-using "believe" twice in the third paragraph sounds awkward.
+-need a period at end of third paragraph
+-maybe use "proponent" instead of "big fan"? or something in that vein
+-when you add more content to the site, don't put the about/education info on the front page. i
+ assume the point of the website is not for people to read about who you are. 
+ -you should probably also remove your high school, no one cares where anyone went to high school
