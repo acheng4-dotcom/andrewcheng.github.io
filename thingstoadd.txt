@@ -3,7 +3,7 @@ Things to add:
     -Precalc
     - Calc 1
     - Calc 2 (as learned)
-    -Multivariable calc 
+    -Multivariable calc (when learned next)
     - more to come 
 Computer Science:
     -Python Programming language 
@@ -13,6 +13,7 @@ Computer Science:
     -verilog(VHDL)
     - Digital Logic and applications 
     - Operating Systems 
+    -Matlab Programming (Similar to Python)
 Eletrical engineering 
     -Voltage Measurements 
     - Computer architecture 
@@ -28,3 +29,28 @@ Eletrical engineering
 Update: 
 Working on site functionality 
     Update functonality to math features and buttons.(7/1/26)
+    Sucessfully updated buttons to work fluently in each tab on the website(7/2/26)
+Todo: (7/3/26)
+Adding content: 
+    - Mathematics (Math)
+        -Algebra Context 
+        -Pre Calc 
+        - Calculus 
+        -Calc 2 (start)
+    - Basic circuit Understanding (Reference)
+        - I probably going to put it into reference 
+        - References to Microcontroller 
+        - Basic Gates and binary number understanding. 
+    -Programming (Python)
+        -Syntax 
+        -Features in python 
+        - Building a first project?
+    - Programming(C language)
+        -Syntax 
+        - Features 
+        - How to's 
+        - Implementation of C 
+    -Reference 
+      -Psuedo Algorithm 
+      - Karungh Maps (K-MAPS pinout)
+    -Build a section specifically for digital logic 
