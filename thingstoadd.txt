@@ -53,4 +53,4 @@ Adding content:
     -Reference 
       -Psuedo Algorithm 
       - Karungh Maps (K-MAPS pinout)
-    -Build a section specifically for digital logic 
+    
