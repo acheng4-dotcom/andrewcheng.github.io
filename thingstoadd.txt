@@ -20,7 +20,7 @@ Eletrical engineering
         -Different Systems
     - Microcontroller Systems 
         breadboards 
-        different controllers 
+        different controllers (pinout and reading diagrams)
     - Embeded Systems 
     -Material Science 
     -Signals Systems 
