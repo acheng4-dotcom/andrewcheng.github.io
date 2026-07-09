@@ -53,7 +53,7 @@ Adding content:
     -Reference 
       -Psuedo Algorithm 
       - Karungh Maps (K-MAPS pinout)
-Introduction: 
+Introduction: (fully updated)
 -using "believe" twice in the third paragraph sounds awkward.
 -need a period at end of third paragraph
 -maybe use "proponent" instead of "big fan"? or something in that vein
