@@ -95,6 +95,20 @@ section a:hover {
     background-color: #2e2e5e;
 }
 
+section a.term-link {
+    display: inline;
+    padding: 0 2px;
+    background-color: rgba(26, 26, 46, 0.08);
+    color: inherit;
+    border-radius: 2px;
+    font-size: inherit;
+    border-bottom: 1px dotted #888;
+}
+
+section a.term-link:hover {
+    background-color: rgba(26, 26, 46, 0.15);
+}
+
 /* NAV */
 .nav {
     background-color: #1a1a2e;
