@@ -227,6 +227,10 @@ section a.term-link:hover {
     border-radius: 4px;
 }
 
+.unit-circle-image {
+    max-width: 450px;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
