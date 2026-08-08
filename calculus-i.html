@@ -26,14 +26,121 @@
         <section>
             <h2>What you will see here</h2>
             <p>This page can include derivative rules, tangent line explanations, and practice examples.</p>
+            <p class="footnote">Source: <a href="https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function">Section 2.2 The Limit of a Function, Calculus Volume 1 OpenStax</a></p>
         </section>
 
         <section>
             <h2>Key ideas</h2>
-            <ul>    
+            <ul>
                 <li>Limits and continuity</li>
                 <li>Derivatives and rules</li>
                 <li>Related rates and optimization</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>The Limit of a Function</h3>
+
+            <h4>Why We Need Limits</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/b2affeb36b502a8fb8fd7d3f6f7314d1dcb25614" alt="Three graphs of functions near x = 2: f(x) = (x^2-4)/(x-2) with an open circle at (2,4), g(x) = |x-2|/(x-2) as two horizontal rays, and h(x) = 1/(x-2)^2 shooting up to infinity on both sides" class="gate-image">
+            <ul>
+                <li>Some functions are undefined exactly at the point we care about, so plugging in a doesn't work</li>
+                <li>Limits describe the behavior of f(x) as x gets arbitrarily close to a, without requiring f(a) to exist</li>
+                <li>Three behaviors near a single point: approaching one value, jumping between two values, or blowing up without bound</li>
+            </ul>
+
+            <h4>Intuitive Definition of a Limit</h4>
+            <ul>
+                <li>If the values of f(x) can be made as close as we like to L by taking x sufficiently close to a (but not equal to a), then lim<sub>x&rarr;a</sub> f(x) = L</li>
+                <li>The limit describes behavior of a function near a point, not necessarily at that point</li>
+                <li>Strategy: build a table of x-values approaching a from both sides (a &plusmn; 0.1, a &plusmn; 0.01, a &plusmn; 0.001, &hellip;) and watch where f(x) settles</li>
+            </ul>
+
+            <h4>Example: Evaluating lim<sub>x&rarr;0</sub> sin(x)/x</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/0dd8bf5c74a7620c386887a65184fffd32595760" alt="Graph of f(x) = sin(x)/x over the interval [-6, 6], curving smoothly with a hole at x = 0" class="gate-image">
+            <ul>
+                <li>f(x) = sin(x)/x is undefined at x = 0 (0/0), so it can't be evaluated by direct substitution</li>
+                <li>Table of values from the left (&minus;0.1, &minus;0.01, &minus;0.001) and right (0.1, 0.01, 0.001) both approach 1</li>
+                <li>Conclusion: lim<sub>x&rarr;0</sub> sin(x)/x = 1, even though the function is undefined at x = 0</li>
+            </ul>
+
+            <h4>Example: Evaluating lim<sub>x&rarr;4</sub> (&radic;x &minus; 2)/(x &minus; 4)</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/fc851196975d1e3dd18fcab1d0d8ab5f74f16e2c" alt="Graph of f(x) = (sqrt(x)-2)/(x-4) over [0,8] with an open circle at x = 4" class="gate-image">
+            <ul>
+                <li>Direct substitution gives 0/0, an indeterminate form</li>
+                <li>Values approaching x = 4 from both sides settle near 0.25</li>
+                <li>Conclusion: lim<sub>x&rarr;4</sub> (&radic;x &minus; 2)/(x &minus; 4) = 0.25</li>
+            </ul>
+
+            <h4>Theorem 2.1: Two Important Limits</h4>
+            <ul>
+                <li>lim<sub>x&rarr;a</sub> x = a (the limit of the identity function is a)</li>
+                <li>lim<sub>x&rarr;a</sub> c = c for any constant c (the limit of a constant function is the constant)</li>
+            </ul>
+
+            <h4>One-Sided Limits</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/3a25517f55e0609b61eb33182b3e2ae8eb5738a5" alt="Graph of g(x) with an open circle at (-1,3) and a closed circle at (-1,4)" class="gate-image">
+            <ul>
+                <li>Limit from the left: lim<sub>x&rarr;a<sup>&minus;</sup></sub> f(x) = L, values of x approach a while staying less than a</li>
+                <li>Limit from the right: lim<sub>x&rarr;a<sup>+</sup></sub> f(x) = L, values of x approach a while staying greater than a</li>
+                <li>Example: even though g(&minus;1) = 4 (closed circle), lim<sub>x&rarr;&minus;1</sub> g(x) = 3 (open circle) &mdash; the function value and the limit can differ</li>
+            </ul>
+
+            <h4>Checkpoint: One-Sided Limits at a Hole</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/bbd87d7303058892cae6af5b50642c460516adc8" alt="Graph of a parabola h(x) with an open circle where the vertex should be, at (2,-1)" class="gate-image">
+            <ul>
+                <li>Both sides of the graph approach the same open circle, so lim<sub>x&rarr;a<sup>&minus;</sup></sub> h(x) and lim<sub>x&rarr;a<sup>+</sup></sub> h(x) agree</li>
+                <li>A hole (undefined point) does not stop a two-sided limit from existing</li>
+            </ul>
+
+            <h4>Example: A Limit That Does Not Exist</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/129955615aaa9011878d34a280fa59baf88b6139" alt="Graph of f(x) = sin(1/x) oscillating rapidly between -1 and 1 as x approaches 0" class="gate-image">
+            <ul>
+                <li>lim<sub>x&rarr;0</sub> sin(1/x): as x approaches 0, 1/x grows without bound, so sin(1/x) oscillates infinitely often between &minus;1 and 1</li>
+                <li>The function never settles on a single value near x = 0</li>
+                <li>Conclusion: the limit does not exist (DNE)</li>
+            </ul>
+
+            <h4>Theorem 2.2: Relating One-Sided and Two-Sided Limits</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/e1bc32cb0d08d9b1905aa14cbbe059766883303f" alt="Graph of the piecewise function f(x) = x+1 for x less than 2, and f(x) = x^2-4 for x greater than or equal to 2, with a break at x = 2" class="gate-image">
+            <ul>
+                <li>lim<sub>x&rarr;a</sub> f(x) = L if and only if lim<sub>x&rarr;a<sup>&minus;</sup></sub> f(x) = L and lim<sub>x&rarr;a<sup>+</sup></sub> f(x) = L</li>
+                <li>Example: for f(x) = {x+1 if x&lt;2; x&sup2;&minus;4 if x&ge;2}, lim<sub>x&rarr;2<sup>&minus;</sup></sub> f(x) = 3 and lim<sub>x&rarr;2<sup>+</sup></sub> f(x) = 0</li>
+                <li>Because the one-sided limits disagree (3 &ne; 0), lim<sub>x&rarr;2</sub> f(x) does not exist</li>
+            </ul>
+
+            <h4>Infinite Limits and Vertical Asymptotes</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/eee6b10f41bede463210c58a69e7d1730adae48d" alt="Graph of f(x) = 1/x curving asymptotically toward x = 0 and y = 0 in quadrants one and three" class="gate-image">
+            <ul>
+                <li>For f(x) = 1/x: lim<sub>x&rarr;0<sup>&minus;</sup></sub> f(x) = &minus;&infin; and lim<sub>x&rarr;0<sup>+</sup></sub> f(x) = +&infin;</li>
+                <li>Since the one-sided limits disagree, lim<sub>x&rarr;0</sub> f(x) does not exist</li>
+                <li>The line x = a is a vertical asymptote whenever a one-sided or two-sided limit at a is +&infin; or &minus;&infin;</li>
+            </ul>
+
+            <h4>Theorem 2.3: Infinite Limits from Positive Integers</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/90d8c6dcd1f6b0085cf0565aa9d9a57ccdd26293" alt="Two graphs of f(x) = 1/(x-a)^n side by side, one for odd n and one for even n, both showing vertical asymptote behavior at x = a" class="gate-image">
+            <ul>
+                <li>For f(x) = 1/(x&minus;a)<sup>n</sup> where n is a positive integer:</li>
+                <li>If n is even: lim<sub>x&rarr;a</sub> f(x) = +&infin;</li>
+                <li>If n is odd: lim<sub>x&rarr;a<sup>+</sup></sub> f(x) = +&infin; and lim<sub>x&rarr;a<sup>&minus;</sup></sub> f(x) = &minus;&infin;</li>
+                <li>Example: f(x) = 1/(x+3)<sup>4</sup> has a vertical asymptote at x = &minus;3, with the limit equal to +&infin; from both sides (n = 4 is even)</li>
+            </ul>
+
+            <h4>Example: Reading Limits, One-Sided Limits, and Values from a Graph</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/a32447fddc2be58cd49ba242d03f192d553b8e4f" alt="Graph of a function with an open circle at (-2,3), a closed circle at (1,6), an open circle at (1,3), a vertical asymptote at x=3, and a change in concavity in the first quadrant" class="gate-image">
+            <ul>
+                <li>Practice distinguishing lim<sub>x&rarr;a<sup>&minus;</sup></sub> f(x), lim<sub>x&rarr;a<sup>+</sup></sub> f(x), lim<sub>x&rarr;a</sub> f(x), and f(a) at several points on one graph</li>
+                <li>Open circles mark values excluded from the function; closed circles mark the actual function value</li>
+                <li>A vertical asymptote (here at x = 3) means the one-sided limits there are infinite, so the two-sided limit does not exist</li>
+            </ul>
+
+            <h4>Application: Einstein's Velocity Equation</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/44559c61ef7c59739bc890039f0b0bd72049866b" alt="A futuristic spaceship speeding through deep space" class="gate-image">
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/43e84f94252b73391294cace1a64b74d9a66fc04" alt="Graph of m/m0 = 1/sqrt(1 - v^2/c^2) showing the mass ratio increasing slowly then sharply as v/c approaches 1, with a vertical asymptote at v/c = 1" class="gate-image">
+            <ul>
+                <li>Einstein's equation for the mass of a moving object: m = m<sub>0</sub> / &radic;(1 &minus; v&sup2;/c&sup2;), where m<sub>0</sub> is rest mass, v is speed, and c is the speed of light</li>
+                <li>As the speed ratio v/c approaches 1, lim<sub>v/c&rarr;1<sup>&minus;</sup></sub> m/m<sub>0</sub> = +&infin;</li>
+                <li>An infinite limit here means an object would require infinite mass (and energy) to reach light speed &mdash; a real-world use of infinite limits</li>
             </ul>
         </section>
 
