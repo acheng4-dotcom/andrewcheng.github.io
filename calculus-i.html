@@ -135,6 +135,156 @@
             </ul>
         </section>
 
+        <section>
+            <h3>Defining the Derivative</h3>
+
+            <h4>The Difference Quotient</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/44546d16e90380bcbe1a4470715ba0659039dad2" alt="Two graphs of y = f(x) with a secant line through (a, f(a)) and (x, f(x)): the left graph labels the run as x - a and gives m_sec = (f(x) - f(a))/(x - a); the right graph labels the run as h and gives m_sec = (f(a+h) - f(a))/h" class="gate-image">
+            <ul>
+                <li>Given a point (a, f(a)) on the graph, the difference quotient is Q = [f(x) &minus; f(a)]/(x &minus; a), the slope of the secant line through (a, f(a)) and (x, f(x))</li>
+                <li>Setting x = a + h (h &ne; 0) gives an equivalent form, Q = [f(a+h) &minus; f(a)]/h, where h is the horizontal distance from a to x</li>
+                <li>As x &rarr; a (equivalently h &rarr; 0), the secant line rotates into the tangent line at (a, f(a))</li>
+            </ul>
+
+            <h4>Definition: Derivative at a Point</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/95f04e8a329b82f7534024b953eeea82c803c83b" alt="Three graphs showing secant lines through (a, f(a)) and nearby points approaching the tangent line at (a, f(a)) as the second point slides toward a, with m_tan = lim x to a of (f(x) - f(a))/(x - a), equivalently lim h to 0 of (f(a+h) - f(a))/h" class="gate-image">
+            <ul>
+                <li>f'(a) = lim<sub>x&rarr;a</sub> [f(x) &minus; f(a)]/(x &minus; a), provided this limit exists</li>
+                <li>Equivalently, f'(a) = lim<sub>h&rarr;0</sub> [f(a+h) &minus; f(a)]/h</li>
+                <li>f'(a) is read "f prime of a" and gives the slope of the tangent line to y = f(x) at x = a</li>
+                <li>If f'(a) exists, f is said to be differentiable at a</li>
+            </ul>
+
+            <h4>Tangent Lines</h4>
+            <ul>
+                <li>m<sub>tan</sub> = f'(a): the slope of the tangent line at x = a is the derivative of f at a</li>
+                <li>Point-slope form of the tangent line: y &minus; f(a) = f'(a)(x &minus; a)</li>
+                <li>Example: for f(x) = x&sup2; at a = 3, f'(3) = 6, so the tangent line is y = 6x &minus; 9</li>
+                <li>Example: for f(x) = 1/x at a = 2, f'(2) = &minus;1/4, so the tangent line is y = &minus;x/4 + 1</li>
+            </ul>
+
+            <h4>The Derivative as a Function</h4>
+            <ul>
+                <li>f'(x) = lim<sub>h&rarr;0</sub> [f(x+h) &minus; f(x)]/h, provided this limit exists &mdash; the derivative function, obtained by letting the point a vary</li>
+                <li>The domain of f' is the set of all x for which this limit exists; it can be a proper subset of the domain of f</li>
+                <li>Common notations for the derivative: f'(x), dy/dx, y', d/dx[f(x)], D<sub>x</sub>f(x) &mdash; all denote the same object</li>
+                <li>The value of the derivative notation dy/dx at x = a is written dy/dx|<sub>x=a</sub></li>
+            </ul>
+
+            <h4>Example: Finding a Derivative Function</h4>
+            <ul>
+                <li>For f(x) = x&sup2; &minus; 2x: f'(x) = lim<sub>h&rarr;0</sub> [f(x+h) &minus; f(x)]/h = lim<sub>h&rarr;0</sub> [(x+h)&sup2; &minus; 2(x+h) &minus; (x&sup2; &minus; 2x)]/h</li>
+                <li>Expanding and simplifying the numerator, then dividing by h and letting h &rarr; 0, gives f'(x) = 2x &minus; 2</li>
+                <li>Strategy: expand f(x+h), subtract f(x), simplify so h factors out of the numerator, cancel the h in the denominator, then take the limit as h &rarr; 0</li>
+            </ul>
+
+            <h4>Derivatives and Rates of Change: Velocity</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/169433cc2acaac23d21347adff0fa635953f6a98" alt="Position graph y = s(t) with a secant line through (a, s(a)) and (t1, s(t1)) representing average velocity, and a tangent line at (a, s(a)) representing instantaneous velocity" class="gate-image">
+            <ul>
+                <li>Average velocity over [a, t]: v<sub>avg</sub> = [s(t) &minus; s(a)]/(t &minus; a), the slope of the secant line on a position-time graph</li>
+                <li>Instantaneous velocity at t = a: v(a) = s'(a) = lim<sub>t&rarr;a</sub> [s(t) &minus; s(a)]/(t &minus; a), the slope of the tangent line on a position-time graph</li>
+                <li>The derivative of a position function is a velocity &mdash; the general pattern behind every "instantaneous rate of change" interpretation of f'(a)</li>
+            </ul>
+            <p class="footnote">Source: <a href="https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative">Section 3.1 Defining the Derivative, Calculus Volume 1 OpenStax</a></p>
+        </section>
+
+        <section>
+            <h3>Related Rates</h3>
+
+            <h4>The Idea Behind Related Rates</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/1d8fe51ec066dbf9fd047d48d10d988f260c194f" alt="Three balloons shown at Time 1, Time 2, and Time 3, increasing in volume and radius as time increases" class="gate-image">
+            <ul>
+                <li>When two or more related quantities are all changing with respect to time, an equation connecting them can be differentiated with respect to time to connect their rates of change</li>
+                <li>Because every quantity in the equation is implicitly a function of t, the chain rule applies to each term: d/dt[r&sup3;] = 3r&sup2; &middot; dr/dt, not just 3r&sup2;</li>
+                <li>Do not substitute the known numerical values until after differentiating &mdash; substituting too soon freezes a changing quantity as if it were constant</li>
+            </ul>
+
+            <h4>Problem-Solving Strategy for Related Rates</h4>
+            <ul>
+                <li>1. Assign variables to all quantities that are functions of time; draw a diagram if the problem is geometric</li>
+                <li>2. Write down the given rate(s) and identify the rate that must be found</li>
+                <li>3. Find an equation relating the variables in step 1</li>
+                <li>4. Differentiate both sides of the equation with respect to time t, using the chain rule as needed</li>
+                <li>5. Substitute the known values and solve the resulting equation for the desired rate</li>
+            </ul>
+
+            <h4>Example: Inflating a Balloon</h4>
+            <ul>
+                <li>Volume and radius of a sphere are related by V = (4/3)&pi;r&sup3;</li>
+                <li>Differentiating with respect to t: dV/dt = 4&pi;r&sup2; &middot; dr/dt</li>
+                <li>Given dV/dt = 2 cm&sup3;/sec and r = 3 cm, solving gives dr/dt = 1/(18&pi;) cm/sec</li>
+            </ul>
+
+            <h4>Example: An Airplane Passing Overhead</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/b946f0d39f65e35b27c7afa25bc79c54e4eb04b2" alt="Right triangle formed by a person on the ground, an airplane in the air, and a radio tower at the right angle: hypotenuse s, ground distance x, height 4000 ft" class="gate-image">
+            <ul>
+                <li>The Pythagorean theorem relates the variables: x&sup2; + 4000&sup2; = s&sup2;</li>
+                <li>Differentiating with respect to t: 2x &middot; dx/dt = 2s &middot; ds/dt</li>
+                <li>Given x = 3000 ft, dx/dt = 600 ft/sec (so s = 5000 ft by the Pythagorean theorem), solving gives ds/dt = 360 ft/sec</li>
+            </ul>
+
+            <h4>Example: Rocket Launch Tracked by a Camera</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/da6ccbea9e57dfc829134cb162b362defeaea7b7" alt="Right triangle with camera angle theta, rocket height h opposite theta, and adjacent side 5000 ft from camera to launch pad" class="gate-image">
+            <ul>
+                <li>The camera angle and rocket height are related by tan&theta; = h/5000</li>
+                <li>Differentiating with respect to t: sec&sup2;&theta; &middot; d&theta;/dt = (1/5000) &middot; dh/dt</li>
+                <li>Given h = 1000 ft and dh/dt = 600 ft/sec, solving gives d&theta;/dt = 3/26 rad/sec</li>
+            </ul>
+
+            <h4>Example: Water Draining from a Funnel</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/3cc93b86da3e1bb1b4269fb6c1adac832bad6253" alt="Cone-shaped funnel with height 2 and top radius 1, filled with water to height h where the radius is r" class="gate-image">
+            <ul>
+                <li>Similar triangles relate the water's radius and height: r = h/2, which reduces the cone volume formula to V = (&pi;/12)h&sup3;</li>
+                <li>Differentiating with respect to t: dV/dt = (&pi;/4)h&sup2; &middot; dh/dt</li>
+                <li>Given dV/dt = &minus;0.03 ft&sup3;/sec and h = 1/2 ft, solving gives dh/dt &asymp; &minus;0.153 ft/sec</li>
+            </ul>
+            <p class="footnote">Source: <a href="https://openstax.org/books/calculus-volume-1/pages/4-1-related-rates">Section 4.1 Related Rates, Calculus Volume 1 OpenStax</a></p>
+        </section>
+
+        <section>
+            <h3>Linear Approximations and Differentials</h3>
+
+            <h4>Linear Approximation</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/62724c3bc43a281d2944deed9e4b28c3542e9cd0" alt="The function f(x) = 1/x shown with its tangent line at x = 2, with a zoomed-in inset showing how closely the tangent line tracks the curve near x = 2" class="gate-image">
+            <ul>
+                <li>The tangent line to y = f(x) at x = a, y = f(a) + f'(a)(x &minus; a), closely approximates f(x) for x near a</li>
+                <li>Linear approximation (tangent line approximation): L(x) = f(a) + f'(a)(x &minus; a)</li>
+                <li>For x sufficiently close to a, f(x) &asymp; L(x); the approximation degrades as x moves farther from a</li>
+            </ul>
+
+            <h4>Example: Approximating &radic;9.1 and sin(62&deg;)</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/14c2b503c4ff14fc3e876cd413d4a5e2483d1c99" alt="The function f(x) = square root of x shown with its tangent line at (9, 3), a very good approximation from x = 6 to x = 12" class="gate-image">
+            <ul>
+                <li>For f(x) = &radic;x at a = 9: L(x) = 3 + (x &minus; 9)/6, so &radic;9.1 &asymp; L(9.1) = 3.0167, very close to the actual value 3.0166</li>
+                <li>For f(x) = sin x at a = &pi;/3 (60&deg;): the tangent line approximates sin(62&deg;) &asymp; 0.88348</li>
+                <li>Linear approximation also justifies the small-angle estimate (1+x)<sup>n</sup> &asymp; 1 + nx near x = 0, e.g. 1.01&sup3; &asymp; 1.03</li>
+            </ul>
+
+            <h4>Differentials</h4>
+            <img src="https://openstax.org/apps/image-cdn/v1/f=webp/apps/archive/20260604.144757/resources/234f93b322cdcc5c7f2d4d8a43e8601259b2a1da" alt="Curve y = f(x) with tangent line L(x) at (a, f(a)); at a + dx, dy = f'(a)dx is the rise along the tangent line and Delta y = f(a+dx) - f(a) is the actual rise along the curve" class="gate-image">
+            <ul>
+                <li>Given y = f(x) differentiable, the differential dx is an independent variable that can take any real value</li>
+                <li>The differential dy is defined as dy = f'(x) dx, giving Leibniz notation dy/dx a literal meaning as a ratio of differentials</li>
+                <li>&Delta;y = f(x + dx) &minus; f(x) is the actual change in y; dy is the change along the tangent line &mdash; for small dx, &Delta;y &asymp; dy</li>
+            </ul>
+
+            <h4>Calculating Differentials and Approximating Change</h4>
+            <ul>
+                <li>For y = x&sup2; + 2x: dy = (2x + 2) dx</li>
+                <li>For y = cos x: dy = &minus;sin x dx</li>
+                <li>Comparing exact vs. approximate change for y = x&sup2; + 2x from x = 2 to x = 2.1 (dx = 0.1): &Delta;y = 0.81 while dy = 0.8, showing dy closely approximates &Delta;y</li>
+            </ul>
+
+            <h4>Error Propagation</h4>
+            <ul>
+                <li>If dx = &Delta;x represents the measurement error of a quantity, the propagated error in a computed value is approximately &Delta;y &asymp; dy = f'(a) dx</li>
+                <li>Relative error is the ratio &Delta;q/q of the error to the measured quantity; percentage error expresses relative error as a percentage</li>
+                <li>Example: measuring a cube's side as 5 cm &plusmn; 0.1 cm gives a propagated volume error of about &plusmn;7.5 cm&sup3;</li>
+                <li>Example: a 6% error in measuring Earth's radius as 4000 &plusmn; 80 mi propagates to roughly a 6% error in the computed volume (since dV/V = 3 dr/r)</li>
+            </ul>
+            <p class="footnote">Source: <a href="https://openstax.org/books/calculus-volume-1/pages/4-2-linear-approximations-and-differentials">Section 4.2 Linear Approximations and Differentials, Calculus Volume 1 OpenStax</a></p>
+        </section>
+
         <a href="math.html" class="back-link">Back to Math topics</a>
     </main>
 
