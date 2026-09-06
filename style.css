@@ -231,6 +231,19 @@ section a.term-link:hover {
     max-width: 450px;
 }
 
+/* WIP BANNER */
+.wip-banner {
+    background-color: #fff3cd;
+    color: #7a5b00;
+    border: 1px solid #ffe08a;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
