@@ -1,11 +1,11 @@
 Things to add: 
 - Mathematics 
-    -Precalc
-    - Calc 1
-    - Calc 2 (as learned)
+    -Precalc (already inputted)
+    - Calc 1 (already inputted)
+    - Calc 2 (as learned) (still need to input)
     -Multivariable calc (when learned next)
     - more to come 
-Computer Science:
+Computer Science(still needds to be updated)
     -Python Programming language 
     - C language 
     -Php
