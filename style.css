@@ -81,6 +81,28 @@ section p:last-child {
     margin-bottom: 0;
 }
 
+.roadmap-list, .roadmap-list ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.roadmap-list {
+    padding-left: 20px;
+}
+
+.roadmap-list > li {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.roadmap-list ul li {
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 4px;
+}
+
 section a {
     display: inline-block;
     padding: 8px 18px;

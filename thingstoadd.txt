@@ -5,7 +5,7 @@ Things to add:
     - Calc 2 (as learned) (still need to input)
     -Multivariable calc (when learned next)
     - more to come 
-Computer Science(still needds to be updated)
+Computer Science(still needs to be updated)
     -Python Programming language 
     - C language 
     -Php
@@ -14,11 +14,11 @@ Computer Science(still needds to be updated)
     - Digital Logic and applications 
     - Operating Systems 
     -Matlab Programming (Similar to Python)
-Eletrical engineering 
+Eletrical engineering(coming soon) 
     -Voltage Measurements 
     - Computer architecture 
         -Different Systems
-    - Microcontroller Systems 
+    - Microcontroller Systems(will add later)
         breadboards 
         different controllers (pinout and reading diagrams)
     - Embeded Systems 
