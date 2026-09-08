@@ -237,6 +237,140 @@ section a.term-link:hover {
     color: #555;
 }
 
+/* PROJECT SHOWCASE */
+.project-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.showcase-item {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    display: flex;
+    min-height: 260px;
+    transition: box-shadow 0.2s;
+}
+
+.showcase-item:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.showcase-visual {
+    flex: 0 0 40%;
+    background: linear-gradient(135deg, #1a1a2e, #2e2e5e);
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-content {
+    flex: 1;
+    padding: 32px 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-content h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-transform: none;
+    letter-spacing: normal;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 12px;
+}
+
+.showcase-content p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 16px;
+}
+
+.showcase-content .project-tags {
+    margin-top: auto;
+}
+
+.project-status {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+}
+
+.status-planned {
+    background-color: #fff3cd;
+    color: #7a5b00;
+}
+
+.status-active {
+    background-color: #d6e9ff;
+    color: #114488;
+}
+
+.status-complete {
+    background-color: #d9f2df;
+    color: #1a6b34;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags .tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #1a1a2e;
+    background-color: rgba(26, 26, 46, 0.08);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.project-links a {
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 8px 18px;
+    background-color: #1a1a2e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-links a:hover {
+    background-color: #2e2e5e;
+}
+
+@media (max-width: 640px) {
+    .showcase-item {
+        flex-direction: column;
+    }
+
+    .showcase-visual {
+        flex-basis: auto;
+        min-height: 140px;
+        font-size: 3rem;
+    }
+}
+
 /* GATE IMAGES */
 .gate-image {
     display: block;
